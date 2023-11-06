@@ -1,1 +1,0 @@
-# cc32-soloproject-client
