@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import LoginForm from './components/LoginForm';
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
 
   return (
     <>
-    This is App.json
+    This is App
     <p>{helloWorld}</p>
+    <LoginForm />
     </>
   )
 }
