@@ -34,10 +34,57 @@ export default function LoginForm() {
     const { errors } = formState;
 
     const onSubmit = async (data) => {
-        
+        const returnedData = await axios.post(url, data).catch(error => {
+            window.alert(error.response.data)
+        });
+        if(returnedData) {
+            setStatusCode(returnedData.status);
+            setUserId(returnedData.data.accountId);
+            setUserUsername(returnedData.data.username);
+        }
     }
 
     return (
-        <>LoginForm</>
+        <>
+        {!correctStatusCode ?
+        <div>
+            <h1 className='loginHeader'>Login Form</h1>
+            <form onSubmit={handleSubmit(onSubmit)} noValidate>
+                <div className='form-control'>
+                    <label htmlFor='username'>Username</label>
+                    <input
+                        type='text'
+                        id='username'
+                        {...register("username", {
+                            required: {
+                                value: true,
+                                message:"Username is required."
+                            }
+                        })}
+                    />
+                    <p className='error'>{errors.username?.message}</p>
+                </div>
+                <div className='form-control'>
+                    <label htmlFor='password'>Password</label>
+                    <input
+                        type='password'
+                        id='password'
+                        {...register("password", {
+                            required: {
+                                value: true,
+                                message: "Password is required."
+                            }
+                        })}
+                    />
+                    <p className='error'>{errors.password?.message}</p>
+                </div>
+                <button className='link' type='submit'>Log In</button>
+            </form>
+            <Link to="/registration">
+                <button className='link'>Register</button>
+            </Link>
+        </div>:
+        <Hompage userId={userId}/> }
+        </>
     );
 };

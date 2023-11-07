@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './App.css';
 import LoginForm from './components/LoginForm';
+
 
 function App() {
 
@@ -20,7 +22,12 @@ function App() {
     <>
     This is App
     <p>{helloWorld}</p>
-    <LoginForm />
+    
+    <Router>
+      <Routes>
+        <Route path='/' element={ <LoginForm /> } />
+      </Routes>
+    </Router>
     </>
   )
 }
