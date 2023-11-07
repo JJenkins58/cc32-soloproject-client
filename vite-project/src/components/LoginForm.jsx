@@ -34,9 +34,11 @@ export default function LoginForm() {
     const { errors } = formState;
 
     const onSubmit = async (data) => {
+        const url = "https://soloproject-client.onrender.com/login";
         const returnedData = await axios.post(url, data).catch(error => {
             window.alert(error.response.data)
         });
+
         if(returnedData) {
             setStatusCode(returnedData.status);
             setUserId(returnedData.data.accountId);
@@ -64,6 +66,7 @@ export default function LoginForm() {
                     />
                     <p className='error'>{errors.username?.message}</p>
                 </div>
+                
                 <div className='form-control'>
                     <label htmlFor='password'>Password</label>
                     <input
