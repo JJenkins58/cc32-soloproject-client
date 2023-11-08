@@ -35,13 +35,12 @@ export default function LoginForm() {
     const { errors } = formState;
 
     const onSubmit = async (data) => {
-        console.log("data:",data);
         // const url = "http://localhost:8080/login";
         const url = "https://soloproject-client.onrender.com/login";
         const returnedData = await axios.post(url, data).catch(error => {
             window.alert(error.response.data)
         });
-        console.log("returndata",returnedData);
+        
         if(returnedData) {
             setStatusCode(returnedData.status);
             setUserId(returnedData.data.accountID);
