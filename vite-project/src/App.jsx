@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
+import Hompage from './components/Homepage';
 
 
 function App() {
@@ -26,8 +27,9 @@ function App() {
     
     <Router>
       <Routes>
-        <Route path='/' element={ <LoginForm /> } />
-        <Route path='/registration' element={ <RegistrationForm /> } />
+        <Route path='/' element={ <LoginForm /> }/>
+        <Route path='/registration' element={ <RegistrationForm /> }/>
+        <Route path='/home' element={ <Hompage /> }/>
       </Routes>
     </Router>
     </>
