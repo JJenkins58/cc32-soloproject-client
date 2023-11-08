@@ -21,19 +21,14 @@ function App() {
   // }
 
   return (
-    <>
-    This is App
-    {/* <p>{helloWorld}</p> */}
-    
-    <Router>
-      <Routes>
-        <Route path='/' element={ <LoginForm /> }/>
-        <Route path='/registration' element={ <RegistrationForm /> }/>
-        <Route path='/home' element={ <Homepage /> }/>
-      </Routes>
-    </Router>
-    </>
-  )
+  <Router>
+    <Routes>
+      <Route path='/' element={ <LoginForm /> }/>
+      <Route path='/registration' element={ <RegistrationForm /> }/>
+      <Route path='/home' element={ <Homepage /> }/>
+    </Routes>
+  </Router>
+  );
 }
 
 export default App
