@@ -39,7 +39,7 @@ export default function LoginForm() {
         const returnedData = await axios.post(url, data).catch(error => {
             window.alert(error.response.data)
         });
-
+        console.log("returndata",returnedData);
         if(returnedData) {
             setStatusCode(returnedData.status);
             setUserId(returnedData.data.accountID);
