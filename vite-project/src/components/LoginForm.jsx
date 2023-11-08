@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import '../styles/LoginForm.css'
-import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
-import axios from 'axios'
-import { createContext } from 'react'
+import React, { useEffect, useState } from 'react';
+import '../styles/LoginForm.css';
+import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { createContext } from 'react';
+import Homepage from './Homepage';
 
 export let userInfo = createContext();
 export let username = createContext();
@@ -66,7 +67,7 @@ export default function LoginForm() {
                     />
                     <p className='error'>{errors.username?.message}</p>
                 </div>
-                
+
                 <div className='form-control'>
                     <label htmlFor='password'>Password</label>
                     <input
@@ -87,7 +88,7 @@ export default function LoginForm() {
                 <button className='link'>Register</button>
             </Link>
         </div>:
-        <Hompage userId={userId}/> }
+        <Homepage userId={userId}/> }
         </>
     );
 };
