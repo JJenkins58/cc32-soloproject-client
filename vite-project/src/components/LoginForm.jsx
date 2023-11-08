@@ -42,7 +42,7 @@ export default function LoginForm() {
 
         if(returnedData) {
             setStatusCode(returnedData.status);
-            setUserId(returnedData.data.accountId);
+            setUserId(returnedData.data.accountID);
             setUserUsername(returnedData.data.username);
         }
     }
