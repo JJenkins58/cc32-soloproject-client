@@ -30,6 +30,7 @@ export default function RegistrationForm() {
 
     const onSubmit = async (data) => {
         const url = "https://soloproject-client.onrender.com/register";
+        // const url = "http://localhost:8080/register";
         const returnedData = await axios.post(url, data).catch(error => {
             window.alert(error.response.data);
         });
