@@ -69,7 +69,8 @@ export default function Homepage() {
     return (<>
         <div className='login-container'>
         <div className='Avatar'><Avatar /></div>
-        <h1>Home Page</h1>
+        <h1 className='title'>StyleSync</h1>
+        <h2>Home Page</h2>
 
          <div className='card-container'>
             {items.map((val, i) => (
