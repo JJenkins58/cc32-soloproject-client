@@ -26,8 +26,8 @@ export default function AddItem() {
     const { errors } = formState;
 
     const onSubmit = async (data) => {
-         const url = "https://soloproject-server.onrender.com/additems";
-        //  const url = "http://localhost:8080/additems";
+        //  const url = "https://soloproject-server.onrender.com/additems";
+         const url = "http://localhost:8080/additems";
          const returnedData = await axios.post(url, data).catch(error => {
             window.alert(error.response.data);
          });
