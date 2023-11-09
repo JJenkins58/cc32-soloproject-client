@@ -7,7 +7,7 @@ export default function Avatar() {
 
     return (
         <>
-        <h1 className="avatar">{userUsername}</h1>
+        <h1 className="avatar">{userUsername}'s Closet</h1>
         </>
     )
 }

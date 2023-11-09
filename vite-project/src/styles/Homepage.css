@@ -1,0 +1,61 @@
+.login-container {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #FDFDF5ff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #666;
+    padding: 20px;
+    margin-top: 50px;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label, input[type="submit"] {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="subtmit"] {
+    background-color: #402315ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #666;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #FDFDF5ff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #666;
+    padding: 20px;
+    margin: 10px;
+    
+}

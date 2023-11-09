@@ -44,7 +44,7 @@ export default function AddItem() {
     }
 
     return (
-        <div className='additem-container'>
+        <div className='login-container'>
             <Avatar />
             <h1 className='additem-header'>AddItem</h1>
             <form className='additemForm' onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -77,10 +77,6 @@ export default function AddItem() {
                         })}
                     />
                     <p className='error'>{errors.category?.message}</p>
-                </div>
-
-                <div>
-                <button>Upload Picture</button>
                 </div>
 
                 <button className='link' type='submit'>Add Item</button>

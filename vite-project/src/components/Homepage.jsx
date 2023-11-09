@@ -67,38 +67,55 @@ export default function Homepage() {
     }
 
     return (<>
-        <Avatar />
+        <div className='login-container'>
+        <div className='Avatar'><Avatar /></div>
         <h1>Home Page</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>User ID</th>
-                    <th>Item Name</th>
-                    <th>Category</th>
-                    <th>Picture</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    items.map((val,i) =>
-                    <tr>
-                        <td id='row-userId'>{val.userId}</td>
-                        <td id='row-itemName'>{val.itemName}</td>
-                        <td id='row-category'>{val.category}</td>
-                        <td id='row-item-picture'>{val.item_picture}</td>
-                        <td><button value={val.id} className='delete-button' onClick={handleDelete}>Delete</button></td>
-                        <td><button value={val.id} className='update-button' onClick={handleUpdate}>Update</button></td>
-                    </tr>)
-                }
-            </tbody>
-        </table>
+
+         <div className='card-container'>
+            {items.map((val, i) => (
+             <div key={i} className='card'>
+             <div className='card-content'>
+                <h3 className='card-title'>{val.itemName}</h3>
+                <p className='card-category'>{val.category}</p>
+                <img
+                    className='card-image'
+                    src={val.item_picture}
+                    alt={`Item ${i}`}
+                />
+            </div>
+            <div className='card-buttons'>
+                <button
+                    value={val.id}
+                    className='delete-button'
+                    onClick={handleDelete}
+                >
+                Delete
+                </button>
+                <button
+                    value={val.id}
+                    className='update-button'
+                    onClick={handleUpdate}
+                >
+                Update
+                </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
         <div>
+            <br></br>
+            <label>Update Name</label>
+            <br></br>
             <input
                 type='text'
                 id='itemName'
                 onChange={(e) => setNameUpdate(e.target.value)}
                 value={nameUpdate}
             />
+            <br></br>
+            <label>Update Category</label>
+            <br></br>
             <input
                 type='text'
                 id='category'
@@ -110,6 +127,7 @@ export default function Homepage() {
             <Link to='/additem'>
                 <button className='homelink'>Add Item</button>
             </Link>
+        </div>
         </div>
     </>);
 }
