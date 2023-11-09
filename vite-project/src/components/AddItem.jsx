@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
 import '../styles/AddItem.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
+import { userInfo } from './LoginForm';
+import Avatar from './Avatar';
 
 export default function AddItem() {
     const [statusCode, setStatusCode] = useState(null);
     const [correctStatusCode, setCorrectStatusCode] = useState(false);
+    const userId = useContext(userInfo);
+    const numUserId = Number(userId);
 
     useEffect(() => {
         if(statusCode === 202) {
@@ -16,6 +20,7 @@ export default function AddItem() {
 
     const form = useForm({
         defaultValues: {
+            userId: numUserId,
             itemName: "",
             category: "",
             picture: null
@@ -26,17 +31,24 @@ export default function AddItem() {
     const { errors } = formState;
 
     const onSubmit = async (data) => {
-        //  const url = "https://soloproject-server.onrender.com/additems";
-         const url = "http://localhost:8080/additems";
+         const url = "https://soloproject-server.onrender.com/additems";
+        //  const url = "http://localhost:8080/additems";
          const returnedData = await axios.post(url, data).catch(error => {
             window.alert(error.response.data);
          });
+
+         if(returnedData) {
+            setStatusCode(returnedData.status);
+            window.alert(returnedData.data);
+         }
     }
 
     return (
         <div className='additem-container'>
+            <Avatar />
             <h1 className='additem-header'>AddItem</h1>
             <form className='additemForm' onSubmit={handleSubmit(onSubmit)} noValidate>
+                
                 <div className='form-control'>
                     <label htmlFor='itemName'>Item Name</label>
                     <input
