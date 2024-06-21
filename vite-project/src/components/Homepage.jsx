@@ -70,7 +70,7 @@ export default function Homepage() {
         <div className='login-container'>
         <div className='Avatar'><Avatar /></div>
         <h1 className='title'>StyleSync</h1>
-        <h2>Home Page</h2>
+        <h2 id='homepage_header'>Home Page</h2>
 
          <div className='card-container'>
             {items.map((val, i) => (
