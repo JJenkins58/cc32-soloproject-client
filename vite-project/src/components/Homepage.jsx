@@ -69,7 +69,7 @@ export default function Homepage() {
     return (<>
         <div className='login-container'>
         <div className='Avatar'><Avatar /></div>
-        <h1 className='title'>StyleSync</h1>
+        <h1 id='homepage_title' className='title'>StyleSync</h1>
         <h2 id='homepage_header'>Home Page</h2>
 
          <div className='card-container'>
