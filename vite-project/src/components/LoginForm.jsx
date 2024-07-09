@@ -51,7 +51,7 @@ export default function LoginForm() {
     return (
         <>
         {!correctStatusCode ?
-        <div className='login-container'>
+        <div id='loginform_login-container' className='login-container'>
             <h1 className='title'>StyleSync</h1>
             <h2 className='loginHeader'>Login Form</h2>
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
