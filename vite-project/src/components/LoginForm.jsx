@@ -52,7 +52,7 @@ export default function LoginForm() {
         <>
         {!correctStatusCode ?
         <div id='loginform_login-container' className='login-container'>
-            <h1 className='title'>StyleSync</h1>
+            <h1 id='login_title' className='title'>StyleSync</h1>
             <h2 className='loginHeader'>Login Form</h2>
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className='form-control'>
