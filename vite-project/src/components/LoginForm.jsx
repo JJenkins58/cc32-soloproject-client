@@ -55,7 +55,7 @@ export default function LoginForm() {
             <h1 id='login_title' className='title'>StyleSync</h1>
             <h2 id='login_login-header' className='loginHeader'>Login Form</h2>
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
-                <div className='form-control'>
+                <div id='login_form-control' className='form-control'>
                     <label htmlFor='username'>Username</label>
                     <input
                         type='text'
