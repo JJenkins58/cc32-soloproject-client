@@ -70,7 +70,7 @@ export default function LoginForm() {
                     <p className='error'>{errors.username?.message}</p>
                 </div>
 
-                <div className='form-control'>
+                <div id='login_form-control_password' className='form-control'>
                     <label htmlFor='password'>Password</label>
                     <input
                         type='password'
