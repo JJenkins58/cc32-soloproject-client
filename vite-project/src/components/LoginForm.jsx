@@ -84,7 +84,7 @@ export default function LoginForm() {
                     />
                     <p className='error'>{errors.password?.message}</p>
                 </div>
-                <button id='login_form-button' className='link' type='submit'>Log In</button>
+                <button id='login_form-button_login' className='link' type='submit'>Log In</button>
             </form>
             <Link to="/registration">
                 <button id='login_form-button_registration' className='link'>Register</button>
