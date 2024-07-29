@@ -63,7 +63,7 @@ export default function RegistrationForm() {
                     <p id='error_username' className='error'>{errors.username?.message}</p>
                 </div>
 
-                <div className='form-control'>
+                <div id='registration-form_form-control_password' className='form-control'>
                     <label htmlFor='password'>Password</label>
                     <input
                         type='password'
