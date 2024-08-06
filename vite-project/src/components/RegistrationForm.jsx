@@ -93,7 +93,7 @@ export default function RegistrationForm() {
                     <p id='error_email' className='error'>{errors.email?.message}</p>
                 </div>
 
-                <div className='form-control'>
+                <div id='form-control_firstname' className='form-control'>
                     <label htmlFor='firstName'>First Name</label>
                     <input 
                         type='text' 
