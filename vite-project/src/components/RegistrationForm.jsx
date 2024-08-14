@@ -127,7 +127,7 @@ export default function RegistrationForm() {
             </form>
 
             <Link to="/">
-                <button className='link'>Back To Login</button>
+                <button id='back_button' className='link'>Back To Login</button>
             </Link>
         </div>:
         <LoginForm /> }
