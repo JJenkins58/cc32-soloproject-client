@@ -76,7 +76,7 @@ export default function AddItem() {
                             }
                         })}
                     />
-                    <p className='error'>{errors.category?.message}</p>
+                    <p id='error_message_category' className='error'>{errors.category?.message}</p>
                 </div>
 
                 <button className='link' type='submit'>Add Item</button>
