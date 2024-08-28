@@ -79,7 +79,7 @@ export default function AddItem() {
                     <p id='error_message_category' className='error'>{errors.category?.message}</p>
                 </div>
 
-                <button className='link' type='submit'>Add Item</button>
+                <button id='button_addItem' className='link' type='submit'>Add Item</button>
             </form>
 
             <Link to='/home'>
