@@ -83,7 +83,7 @@ export default function AddItem() {
             </form>
 
             <Link to='/home'>
-                <button className='additem-home-button'>Home</button>
+                <button id='button_home' className='additem-home-button'>Home</button>
             </Link>
         </div>
     );
