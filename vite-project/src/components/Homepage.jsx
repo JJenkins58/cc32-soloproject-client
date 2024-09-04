@@ -76,7 +76,7 @@ export default function Homepage() {
             {items.map((val, i) => (
              <div id='card' key={i} className='card'>
              <div id='card_content' className='card-content'>
-                <h3 className='card-title'>{val.itemName}</h3>
+                <h3 id='homepage_card-title' className='card-title'>{val.itemName}</h3>
                 <p className='card-category'>{val.category}</p>
                 <img
                     className='card-image'
