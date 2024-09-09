@@ -77,7 +77,7 @@ export default function Homepage() {
              <div id='homepage_card' key={i} className='card'>
              <div id='homepage_card_content' className='card-content'>
                 <h3 id='homepage_card-title' className='card-title'>{val.itemName}</h3>
-                <p className='card-category'>{val.category}</p>
+                <p id='homepage_card-category' className='card-category'>{val.category}</p>
                 <img
                     className='card-image'
                     src={val.item_picture}
