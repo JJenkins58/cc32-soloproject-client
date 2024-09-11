@@ -79,6 +79,7 @@ export default function Homepage() {
                 <h3 id='homepage_card-title' className='card-title'>{val.itemName}</h3>
                 <p id='homepage_card-category' className='card-category'>{val.category}</p>
                 <img
+                    id='homepage_card-image'
                     className='card-image'
                     src={val.item_picture}
                     alt={`Item ${i}`}
