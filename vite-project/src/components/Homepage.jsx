@@ -85,7 +85,7 @@ export default function Homepage() {
                     alt={`Item ${i}`}
                 />
             </div>
-            <div className='card-buttons'>
+            <div id='homepage_card-buttons' className='card-buttons'>
                 <button
                     value={val.id}
                     className='delete-button'
