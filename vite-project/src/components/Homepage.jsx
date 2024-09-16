@@ -88,6 +88,7 @@ export default function Homepage() {
             <div id='homepage_card-buttons' className='card-buttons'>
                 <button
                     value={val.id}
+                    id='homepage_delete-button'
                     className='delete-button'
                     onClick={handleDelete}
                 >
