@@ -96,6 +96,7 @@ export default function Homepage() {
                 </button>
                 <button
                     value={val.id}
+                    id='homepage_update-button'
                     className='update-button'
                     onClick={handleUpdate}
                 >
