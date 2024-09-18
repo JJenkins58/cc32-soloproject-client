@@ -82,7 +82,7 @@ export default function LoginForm() {
                             }
                         })}
                     />
-                    <p className='error'>{errors.password?.message}</p>
+                    <p id='login_form-password_error' className='error'>{errors.password?.message}</p>
                 </div>
                 <button id='login_form-button_login' className='link' type='submit'>Log In</button>
             </form>
