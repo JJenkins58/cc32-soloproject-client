@@ -67,7 +67,7 @@ export default function LoginForm() {
                             }
                         })}
                     />
-                    <p id='login_form-error_message' className='error'>{errors.username?.message}</p>
+                    <p id='login_form-error_username' className='error'>{errors.username?.message}</p>
                 </div>
 
                 <div id='login_form-control_password' className='form-control'>
