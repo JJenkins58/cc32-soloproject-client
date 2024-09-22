@@ -44,7 +44,7 @@ export default function RegistrationForm() {
     return (
         <>
         {!correctStatusCode ?
-        <div className='login-container'>
+        <div id='registration-form_login-container' className='login-container'>
             <h1 id='registration-form_title' className='title'>StyleSync</h1>
             <h2 id='registration-form_loginheader' className='loginHeader'>Registration Form</h2>
             <form className="registrationForm" onSubmit={handleSubmit(onSubmit)} noValidate>
