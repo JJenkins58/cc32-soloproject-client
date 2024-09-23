@@ -47,7 +47,7 @@ export default function RegistrationForm() {
         <div id='registration-form_login-container' className='login-container'>
             <h1 id='registration-form_title' className='title'>StyleSync</h1>
             <h2 id='registration-form_loginheader' className='loginHeader'>Registration Form</h2>
-            <form className="registrationForm" onSubmit={handleSubmit(onSubmit)} noValidate>
+            <form id='registration-form_form' className="registrationForm" onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div id='registration-form_form-control' className='form-control'>
                     <label htmlFor='username'>Username</label>
                     <input
