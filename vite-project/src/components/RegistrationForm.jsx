@@ -49,7 +49,7 @@ export default function RegistrationForm() {
             <h2 id='registration-form_loginheader' className='loginHeader'>Registration Form</h2>
             <form id='registration-form_form' className="registrationForm" onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div id='registration-form_form-control' className='form-control'>
-                    <label htmlFor='username'>Username</label>
+                    <label id='registration-form_label_username' htmlFor='username'>Username</label>
                     <input
                         type='text'
                         id='username'
