@@ -109,7 +109,7 @@ export default function RegistrationForm() {
                 </div>
 
                 <div id='form-control_lastname' className='form-control'>
-                    <label htmlFor='lastName'>Last Name</label>
+                    <label id='registration-form_label_lastname' htmlFor='lastName'>Last Name</label>
                     <input 
                         type='text' 
                         id='lastName' 
