@@ -123,7 +123,7 @@ export default function RegistrationForm() {
                     <p id='form-control_error_message' className='error'>{errors.last_name?.message}</p>
                 </div>
 
-                <button id='register_button' className='link' type='submit'>Register</button>
+                <button id='registration-form_register_button' className='link' type='submit'>Register</button>
             </form>
 
             <Link to="/">
