@@ -64,7 +64,7 @@ export default function RegistrationForm() {
                 </div>
 
                 <div id='registration-form_form-control_password' className='form-control'>
-                    <label htmlFor='password'>Password</label>
+                    <label id='registration-form_password-label' htmlFor='password'>Password</label>
                     <input
                         type='password'
                         id='password'
