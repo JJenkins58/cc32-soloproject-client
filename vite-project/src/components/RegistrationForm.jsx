@@ -78,7 +78,7 @@ export default function RegistrationForm() {
                     <p id='error_password' className='error'>{errors.password?.message}</p>
                 </div>
 
-                <div id='form-control_email' className='form-control'>
+                <div id='registration-form_form-control_email' className='form-control'>
                     <label id='email_label' htmlFor='email'>Email</label>
                     <input
                         type='email'
