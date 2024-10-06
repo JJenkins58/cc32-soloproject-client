@@ -79,7 +79,7 @@ export default function RegistrationForm() {
                 </div>
 
                 <div id='registration-form_form-control_email' className='form-control'>
-                    <label id='email_label' htmlFor='email'>Email</label>
+                    <label id='registration_form-email_label' htmlFor='email'>Email</label>
                     <input
                         type='email'
                         id='email'
