@@ -90,7 +90,7 @@ export default function RegistrationForm() {
                             }
                         })}
                     />
-                    <p id='error_email' className='error'>{errors.email?.message}</p>
+                    <p id='registration-form_error_email' className='error'>{errors.email?.message}</p>
                 </div>
 
                 <div id='form-control_firstname' className='form-control'>
