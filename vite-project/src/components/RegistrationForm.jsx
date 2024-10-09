@@ -105,7 +105,7 @@ export default function RegistrationForm() {
                             }
                         })} 
                     />
-                    <p id='error_first-name' className='error'>{errors.first_name?.message}</p>
+                    <p id='registration-form_error_first-name' className='error'>{errors.first_name?.message}</p>
                 </div>
 
                 <div id='form-control_lastname' className='form-control'>
