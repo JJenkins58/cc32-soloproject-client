@@ -108,7 +108,7 @@ export default function RegistrationForm() {
                     <p id='registration-form_error_first-name' className='error'>{errors.first_name?.message}</p>
                 </div>
 
-                <div id='form-control_lastname' className='form-control'>
+                <div id='registration-form_form-control_lastname' className='form-control'>
                     <label id='registration-form_label_lastname' htmlFor='lastName'>Last Name</label>
                     <input 
                         type='text' 
