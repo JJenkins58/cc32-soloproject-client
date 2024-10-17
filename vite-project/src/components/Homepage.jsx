@@ -113,7 +113,7 @@ export default function Homepage() {
             <br></br>
             <input
                 type='text'
-                id='itemName'
+                id='homepage_itemName'
                 onChange={(e) => setNameUpdate(e.target.value)}
                 value={nameUpdate}
             />
