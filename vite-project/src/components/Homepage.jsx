@@ -122,7 +122,7 @@ export default function Homepage() {
             <br></br>
             <input
                 type='text'
-                id='category'
+                id='homepage_category'
                 onChange={(e) => setCategoryUpdate(e.target.value)}
                 value={categoryUpdate}
             />
