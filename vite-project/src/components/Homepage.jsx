@@ -109,7 +109,7 @@ export default function Homepage() {
 
         <div>
             <br></br>
-            <label id='update-name_label'>Update Name</label>
+            <label id='homepage_update-name_label'>Update Name</label>
             <br></br>
             <input
                 type='text'
