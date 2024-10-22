@@ -118,7 +118,7 @@ export default function Homepage() {
                 value={nameUpdate}
             />
             <br></br>
-            <label id='update-category_label'>Update Category</label>
+            <label id='homepage_update-category_label'>Update Category</label>
             <br></br>
             <input
                 type='text'
