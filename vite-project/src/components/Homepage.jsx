@@ -129,7 +129,7 @@ export default function Homepage() {
         </div>
         <div>
             <Link to='/additem'>
-                <button id='additem_button' className='homelink'>Add Item</button>
+                <button id='homepage_additem_button' className='homelink'>Add Item</button>
             </Link>
         </div>
         </div>
