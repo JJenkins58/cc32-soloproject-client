@@ -53,7 +53,7 @@ export default function AddItem() {
                     <label id='itemName_label' htmlFor='itemName'>Item Name</label>
                     <input
                         type='text'
-                        id='itemName'
+                        id='additem_itemName'
                         {...register("itemName", {
                             required: {
                                 value: true,
