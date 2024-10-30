@@ -75,7 +75,7 @@ export default function RegistrationForm() {
                             }
                         })}
                     />
-                    <p id='error_password' className='error'>{errors.password?.message}</p>
+                    <p id='registration-form_error_password' className='error'>{errors.password?.message}</p>
                 </div>
 
                 <div id='registration-form_form-control_email' className='form-control'>
