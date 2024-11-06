@@ -44,7 +44,7 @@ export default function AddItem() {
     }
 
     return (
-        <div id='additem_login-container' className='login-container'>
+        <div id='add-item_login-container' className='login-container'>
             <Avatar />
             <h1 id='additem_header' className='additem-header'>AddItem</h1>
             <form id='additem_additemForm' className='additemForm' onSubmit={handleSubmit(onSubmit)} noValidate>
