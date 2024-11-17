@@ -64,7 +64,7 @@ export default function AddItem() {
                     <p id='add-item_error_message_itemName' className='error'>{errors.itemName?.message}</p>
                 </div>
 
-                <div id='additem_form-control' className='form-control'>
+                <div id='add-item_form-control' className='form-control'>
                     <label id='additem_category_label' htmlFor='category'>Category</label>
                     <input
                         type='text'
