@@ -68,7 +68,7 @@ export default function AddItem() {
                     <label id='additem_category_label' htmlFor='category'>Category</label>
                     <input
                         type='text'
-                        id='additem_category'
+                        id='add-item_category'
                         {...register("category", {
                             required: {
                                 value: true,
