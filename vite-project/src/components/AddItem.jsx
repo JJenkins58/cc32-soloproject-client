@@ -65,7 +65,7 @@ export default function AddItem() {
                 </div>
 
                 <div id='add-item_form-control' className='form-control'>
-                    <label id='additem_category_label' htmlFor='category'>Category</label>
+                    <label id='add-item_category_label' htmlFor='category'>Category</label>
                     <input
                         type='text'
                         id='add-item_category'
