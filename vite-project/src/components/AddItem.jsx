@@ -50,7 +50,7 @@ export default function AddItem() {
             <form id='add-item_add-item-form' className='additemForm' onSubmit={handleSubmit(onSubmit)} noValidate>
                 
                 <div id='add-item_form-control' className='form-control'>
-                    <label id='add-item_itemName_label' htmlFor='itemName'>Item Name</label>
+                    <label id='add-item_item-name_label' htmlFor='itemName'>Item Name</label>
                     <input
                         type='text'
                         id='add-item_itemName'
