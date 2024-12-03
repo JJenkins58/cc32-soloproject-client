@@ -61,7 +61,7 @@ export default function AddItem() {
                             }
                         })}
                     />
-                    <p id='add-item_error_message_itemName' className='error'>{errors.itemName?.message}</p>
+                    <p id='add-item_error_message_item-name' className='error'>{errors.itemName?.message}</p>
                 </div>
 
                 <div id='add-item_form-control' className='form-control'>
